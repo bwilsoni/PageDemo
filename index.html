@@ -12,23 +12,22 @@
 
         h1 {
             font-family: Helvetica, sans-serif;
-            /* padding-top: 5%; */
-            padding-left: 40px;
+            /* padding-left: 40px; */
             color: black;
         }
 
         h2 {
             font-family: Helvetica, sans-serif;
-            /* padding-top: 30px; */
-            padding-left: 60px;
+            /* padding-left: 60px; */
             color: black;
         }
 
         /* Menu Bar styling */
         .navbar {
             overflow: hidden;
-            background-color: lightslategray;
+            /* background-color: lightslategray; */
             padding: 0;
+            position: -webkit-sticky;
             position: sticky;
             top: 0;
             width: 100%;
@@ -37,36 +36,45 @@
         .navbar a {
             float: right;
             display: block;
-            color: black;
+            color: darkgreen;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
         }
 
         .navbar a:hover {
-            background-color: #555;
+            background-color: lightgray;
             color: black;
         }
 
-        .active {
-            background-color: #4CAF50;
+        .navbar a:hover:not(.active) {
+            background-color: #555;
             color: white;
         }
 
+        /* not working yet, as these links don't reference anything */
+        /* .navbar a.active {
+            background-color: red;
+            color: green;
+        } */
+
+
         .main {
             margin-top: 30px;
+            padding-left: 7%;
         }
     </style>
 </head>
 
 <body>
     <div class="navbar">
-        <a href="#home" style="float:left">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
+        <a class="active" href="#home" style="float:left">Home</a>
+        <a class="active" href="#news">News</a>
+        <a class="active" href="#contact">Contact</a>
     </div>
     <div class="main">
         <h1>Bryan Wilson Project</h1>
+        <a name="home">Home</a>
         <h2>Need help leveling the tech playing field. Let's work together.</h2>
         Some text some text some text some text..<br />
         Some text some text some text some text..<br />
@@ -99,6 +107,7 @@
         Some text some text some text some text..<br />
         Some text some text some text some text..<br />
         Some text some text some text some text..<br />
+        <a name="contact">Contact</a>
     </div>
 </body>
 
