@@ -12,64 +12,94 @@
 
         h1 {
             font-family: Helvetica, sans-serif;
+            /* padding-top: 5%; */
             padding-left: 40px;
             color: black;
         }
 
         h2 {
             font-family: Helvetica, sans-serif;
-            padding-top: 30px;
+            /* padding-top: 30px; */
             padding-left: 60px;
             color: black;
         }
 
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            width: 200px;
+        /* Menu Bar styling */
+        .navbar {
+            overflow: hidden;
             background-color: lightslategray;
+            padding: 0;
+            position: sticky;
+            top: 0;
+            width: 100%;
         }
 
-        li a {
+        .navbar a {
+            float: right;
             display: block;
             color: black;
-            padding: 8px 16px;
+            text-align: center;
+            padding: 14px 16px;
             text-decoration: none;
         }
 
-        li {
-            display: inline;
+        .navbar a:hover {
+            background-color: #555;
+            color: black;
         }
 
-        li a:hover {
-            background-color: #555;
+        .active {
+            background-color: #4CAF50;
             color: white;
         }
 
-        /* html {
-            background: url(images/bg.jpg) no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        } */
+        .main {
+            margin-top: 30px;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Bryan Wilson Project</h1>
-    <h2>Need help leveling the tech playing field. Let's work together.</h2>
-    <ul>
-        <li><a href="default.asp">Home</a></li>
-        <li><a href="news.asp">News</a></li>
-        <li><a href="contact.asp">Contact</a></li>
-        <li><a href="about.asp">About</a></li>
-    </ul>
-    <!-- <h2>Let's work together.</h2> -->
-
-    <!-- <body background="images/bg.jpg">
-    </body> -->
+    <div class="navbar">
+        <a href="#home" style="float:left">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="main">
+        <h1>Bryan Wilson Project</h1>
+        <h2>Need help leveling the tech playing field. Let's work together.</h2>
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+    </div>
 </body>
 
 </html>
