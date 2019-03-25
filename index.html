@@ -10,72 +10,107 @@
             background: antiquewhite;
         }
 
+
+
         h1 {
             font-family: Helvetica, sans-serif;
-            /* padding-left: 40px; */
             color: black;
+            line-height: 0.5em;
         }
 
-        h2 {
+        h3 {
             font-family: Helvetica, sans-serif;
-            /* padding-left: 60px; */
             color: black;
+            line-height: 0.5em;
+
         }
 
         /* Menu Bar styling */
-        .navbar {
+        nav {
             overflow: hidden;
-            /* background-color: lightslategray; */
             padding: 0;
-            position: -webkit-sticky;
-            position: sticky;
+            position: relative;
             top: 0;
             width: 100%;
         }
 
+        .navbar .title {
+            color: red;
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            font-size: 200%;
+        }
+
+        /* Sets navigation link styling, oriented on right side of page, colors, padding, display block means it  */
         .navbar a {
             float: right;
-            display: block;
+            /* display: block; Don't know if this is needed, allows for vertical menu bars*/
             color: darkgreen;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
         }
 
+        /* When mouse hovers over a link in the navigation bar, change background color, and text color */
         .navbar a:hover {
             background-color: lightgray;
             color: black;
         }
 
-        .navbar a:hover:not(.active) {
+        /* .navbar a:hover:not(.active) {
             background-color: #555;
             color: white;
-        }
+        } */
 
-        /* not working yet, as these links don't reference anything */
+        /* will highlight the link hand coded as active, this seems like somehting that could be updateable with JS */
         /* .navbar a.active {
             background-color: red;
             color: green;
         } */
 
-
+        /* Add space to prevent menu bar from overlapping with content labeled main, also indent from left */
         .main {
-            margin-top: 30px;
+            /* margin-top: 30px; */
             padding-left: 7%;
         }
     </style>
 </head>
 
 <body>
-    <div class="navbar">
-        <a class="active" href="#home" style="float:left">Home</a>
-        <a class="active" href="#news">News</a>
-        <a class="active" href="#contact">Contact</a>
-    </div>
+    <nav class="navbar">
+        <div class="title">Bryan Wilson Project</div>
+        <a class="active" href="#home">Home</a>
+        <a class="boop" href="#news">News</a>
+        <a class="boop" href="#contact">Contact</a>
+    </nav>
+    <!-- <div class="title">
+        <h3>Need help leveling the tech playing field. Let's work together.</h3>
+
+    </div> -->
     <div class="main">
-        <h1>Bryan Wilson Project</h1>
         <a name="home">Home</a>
-        <h2>Need help leveling the tech playing field. Let's work together.</h2>
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
+        Some text some text some text some text..<br />
         Some text some text some text some text..<br />
         Some text some text some text some text..<br />
         Some text some text some text some text..<br />
