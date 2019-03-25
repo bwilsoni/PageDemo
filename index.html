@@ -10,8 +10,6 @@
             background: antiquewhite;
         }
 
-
-
         h1 {
             font-family: Helvetica, sans-serif;
             color: black;
@@ -46,7 +44,6 @@
         /* Sets navigation link styling, oriented on right side of page, colors, padding, display block means it  */
         .navbar a {
             float: right;
-            /* display: block; Don't know if this is needed, allows for vertical menu bars*/
             color: darkgreen;
             text-align: center;
             padding: 14px 16px;
@@ -59,21 +56,22 @@
             color: black;
         }
 
-        /* .navbar a:hover:not(.active) {
-            background-color: #555;
-            color: white;
-        } */
+        /* Styling for Resume content in 3 columns layout */
 
-        /* will highlight the link hand coded as active, this seems like somehting that could be updateable with JS */
-        /* .navbar a.active {
-            background-color: red;
-            color: green;
-        } */
+        /* Height can and should be removed once I can blend with background colors */
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+            height: 350px;
+            box-sizing: border-box;
+        }
 
-        /* Add space to prevent menu bar from overlapping with content labeled main, also indent from left */
-        .main {
-            /* margin-top: 30px; */
-            padding-left: 7%;
+        /* ensures the next logical content does not interfere with the columns */
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
         }
     </style>
 </head>
@@ -91,6 +89,52 @@
     </div> -->
     <div class="main">
         <a name="home">Home</a>
+
+        <!-- Resume content styled with 3 column table -->
+        <div class="row">
+            <div class="column" style="background-color:white;">
+                <h2>Skills</h2>
+                <hr>
+                <ul>
+                    <li>Automation of Processes</li>
+                    <li>macOS & Windows 10 Hardware and Software Troubleshooting</li>
+                    <li>Solutions Architecting</li>
+                    <li>Customer Service</li>
+                    <li>Network Troubleshooting</li>
+                    <li>Security Conscience</li>
+                    <li>Results driven</li>
+                    <li>Customer Experience</li>
+                </ul>
+            </div>
+            <div class="column" style="background-color:white;">
+                <h2>Tools</h2>
+                <hr>
+                <ul>
+                    <li>PowerShell</li>
+                    <li>Bash</li>
+                    <li>MDM</li>
+                    <li>Visual Studio Code</li>
+                    <li>Github</li>
+                    <li>SSH</li>
+                    <li>Microsoft Office Suite</li>
+                    <li>iWork (Apple Productivity Suite)</li>
+                </ul>
+            </div>
+            <div class="column" style="background-color:white;">
+                <h2>Experience</h2>
+                <hr>
+                <ul>
+                    <li>Excellent Customer Service in challenging, high expectations environment</li>
+                    <li>Mixed DoD Environment</li>
+                    <li>AFS/Kerberos/Putty Stack configuration (supporting Web Developers)</li>
+                    <li>Small/Medium Business legacy email system migration</li>
+                    <li>Management of macOS servers</li>
+                    <li>Centrify to implement macOS integration in Windows based environment</li>
+                </ul>
+            </div>
+        </div>
+
+
         Some text some text some text some text..<br />
         Some text some text some text some text..<br />
         Some text some text some text some text..<br />
