@@ -93,6 +93,8 @@
             padding-bottom: 50px;
         }
 
+        /* Styling for Contact form */
+
         /* Style inputs with type="text", select elements and textareas */
         input[type=text],
         select,
@@ -135,6 +137,10 @@
             border-radius: 5px;
             background-color: #f2f2f2;
             padding: 20px;
+            width: 40%;
+            /* downsizes container from full screen width */
+            margin: auto;
+            /* attempt to center contact form */
         }
 
 
@@ -219,25 +225,20 @@
         </div>
 
         <!-- Contact form -->
-        <a name="contact">Contact</a>
+        <a name="contact">Contact Form</a>
+
         <div class="container">
             <form action="action_page.php">
 
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                </select>
+                <label for="email">Email address</label>
+                <input type="text" id="email" name="emailaddress" placeholder="Your email address...">
 
                 <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <input type="text" id="subject" name="subjectline" placeholder="Subject line...">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="messagearea" placeholder="Write something.."
+                    style="height:200px"></textarea>
 
                 <input type="submit" value="Submit">
 
