@@ -96,6 +96,15 @@
             margin-top: 20px;
         } */
 
+        /* Contact Form styling */
+        .contact-form {
+            width: 100%;
+        }
+
+        #contact-text {
+            float: left;
+        }
+
         /* Style inputs with type="text", select elements and textareas */
         input[type=text],
         select,
@@ -134,7 +143,7 @@
         }
 
         /* Add a background color and some padding around the form */
-        .container {
+        .contact-container {
             border-radius: 5px;
             background-color: #f2f2f2;
             padding: 20px;
@@ -142,8 +151,8 @@
             /* downsizes container from full screen width */
             margin: auto;
             /* attempt to center contact form */
+            float: right;
         }
-
 
         /* Bottom of page, navigation links for further reference */
         .bottom-nav {
@@ -163,6 +172,7 @@
         <h3>Need help leveling the tech playing field. Let's work together.</h3>
 
     </div> -->
+
     <div class="main">
         <!-- <a name="home">Home</a> -->
 
@@ -225,26 +235,34 @@
             </a>
         </div>
 
-        <!-- Contact form -->
+        <!-- Contact form, using div class to contain both left side "text box", and form container. Helps with layout structure. -->
+        <div class="contact-form">
 
-        <div class="container">
-            <a name="contact">Contact Form</a>
-            <form action="action_page.php">
+            <!-- Text to display next to contact form. This could be expanded. -->
+            <div id="contact-text">
+                <a name="contact">Let's connect.</a>
+            </div>
 
-                <label for="email">Email address</label>
-                <input type="text" id="email" name="emailaddress" placeholder="Your email address...">
+            <!-- Contact form, action shows error currently, as the php file referenced does not exist. -->
+            <div class="contact-container">
+                <form action="action_page.php">
 
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subjectline" placeholder="Subject line...">
+                    <label for="email">Email address</label>
+                    <input type="text" id="email" name="emailaddress" placeholder="Your email address...">
 
-                <label for="message">Message</label>
-                <textarea id="message" name="messagearea" placeholder="Write something.."
-                    style="height:200px"></textarea>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subjectline" placeholder="Subject line...">
 
-                <input type="submit" value="Submit">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="messagearea" placeholder="Write something.."
+                        style="height:200px"></textarea>
 
-            </form>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </div>
+
+        <!-- Bottom of page navigation to further research and reading -->
         <div class="bottom-nav">
             <a href="http://www.linkedin.com/in/bryan-wilson-info">linkedin</a> |
             <a href="https://github.com/bwilsoni">github</a>
