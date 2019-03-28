@@ -3,35 +3,36 @@
 
 <head>
     <style>
+        html {
+            height: 100%;
+        }
+
         body {
-            /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
             font-family: Arial, Helvetica, sans-serif;
             font-size: 15px;
             line-height: 27px;
             color: black;
             background: antiquewhite;
-            padding-bottom: 50px;
-            /* padding bottom of page with whitespace */
-            margin-bottom: 50px;
+            height: 100%;
         }
 
         body::after {
             content: "";
             display: block;
-            height: 50px;
+            /* height: 0px; */
+            /* In example height was set to 50px, setting to 0 or removing, removed a buffer that was appearing below the footer */
         }
 
-        h1 {
-            font-family: Helvetica, sans-serif;
-            color: black;
-            line-height: 0.5em;
+        main {
+            min-height: 100%;
+            margin-bottom: -50px;
+            /* background: #ddd; */
         }
 
-        h3 {
-            font-family: Helvetica, sans-serif;
-            color: black;
-            line-height: 0.5em;
-
+        main:after {
+            content: "";
+            display: block;
+            height: 100px;
         }
 
         /* Menu Bar styling */
@@ -159,38 +160,45 @@
         }
 
         /* Bottom of page, navigation links for further reference */
-        /* .bottom-nav {
-            padding-left: 20px;
-        } */
-
         footer {
             /* position: fixed; */
             left: 0;
             bottom: 0;
             width: 100%;
             height: 50px;
-            background-color: red;
+            font-size: 120%;
+            background-color: darkslategray;
+            color: red;
+            /* text-align: center; */
+            padding: 5px 5px;
+            /* float: left; */
+            text-decoration: none;
+        }
+
+        footer a {
+            text-decoration: inherit;
             color: white;
-            text-align: center;
+            font-size: inherit;
+            /* padding-left: 20px; */
+        }
+
+        footer #name-footer {
+            float: right;
+            color: white;
+            /* padding-right: 20px; */
         }
     </style>
 </head>
 
 <body>
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="title">Bryan Wilson Project</div>
-        <a class="active" href="#home">Home</a>
-        <a class="boop" href="#news">News</a>
-        <a class="boop" href="#contact">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
     </nav>
-    <!-- <div class="title">
-        <h3>Need help leveling the tech playing field. Let's work together.</h3>
-
-    </div> -->
-
-    <div class="main">
-        <!-- <a name="home">Home</a> -->
-
+    <main>
         <!-- Resume content styled with 3 column table -->
         <div class="row">
             <div class="column">
@@ -273,22 +281,22 @@
                         style="height:200px"></textarea>
 
                     <input type="submit" value="Submit">
+                    <!-- closing form -->
                 </form>
+                <!-- Closing contact container div-->
             </div>
+            <!-- Closing Contact form div -->
         </div>
-
-        <!-- Bottom of page navigation to further research and reading -->
-        <!-- <div class="bottom-nav">
-            <a href="http://www.linkedin.com/in/bryan-wilson-info">linkedin</a> |
-            <a href="https://github.com/bwilsoni">github</a>
-        </div> -->
-
+    </main>
 </body>
+
 
 <!-- Footer with further reading and research -->
 <footer>
     <a href="http://www.linkedin.com/in/bryan-wilson-info">linkedin</a> |
     <a href="https://github.com/bwilsoni">github</a>
+    <a id="name-footer" href="https://bwilson.tech">Bryan Wilson 2019</a>
+    <!-- Closing footer -->
 </footer>
 
 </html>
