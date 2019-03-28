@@ -12,7 +12,7 @@
             font-size: 15px;
             line-height: 27px;
             color: black;
-            background: antiquewhite;
+            background: red;
             height: 100%;
         }
 
@@ -100,13 +100,33 @@
 
         /* Contact Form styling */
         .contact-form {
-            width: 100%;
+            width: 60%;
             height: 600px;
         }
 
         #contact-text {
             float: left;
+            text-align: right;
+            padding-right: 40px;
+            box-sizing: border-box;
+            width: 40%;
+        }
+
+        #contact-text ul {
+            list-style-type: none;
+        }
+
+        /* Add a background color and some padding around the form */
+        .contact-container {
+            box-sizing: border-box;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
             width: 50%;
+            /* downsizes container from full screen width */
+            margin: auto;
+            /* attempt to center contact form */
+            float: right;
         }
 
         /* Style inputs with type="text", select elements and textareas */
@@ -146,23 +166,12 @@
             background-color: #45a049;
         }
 
-        /* Add a background color and some padding around the form */
-        .contact-container {
-            box-sizing: border-box;
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 20px;
-            width: 50%;
-            /* downsizes container from full screen width */
-            margin: auto;
-            /* attempt to center contact form */
-            float: right;
-        }
+
 
         /* Bottom of page, navigation links for further reference */
         footer {
-            /* position: fixed; */
-            left: 0;
+            position:
+                left: 0;
             bottom: 0;
             width: 100%;
             height: 50px;
@@ -179,13 +188,11 @@
             text-decoration: inherit;
             color: white;
             font-size: inherit;
-            /* padding-left: 20px; */
         }
 
         footer #name-footer {
             float: right;
             color: white;
-            /* padding-right: 20px; */
         }
     </style>
 </head>
@@ -263,7 +270,10 @@
 
             <!-- Text to display next to contact form. This could be expanded. -->
             <div id="contact-text">
-                <a name="contact">Let's connect.</a>
+                <a name="contact"></a>
+                <ul>
+                    <li>Let's connect</li>
+                </ul>
             </div>
 
             <!-- Contact form, action shows error currently, as the php file referenced does not exist. -->
