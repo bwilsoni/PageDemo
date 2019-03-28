@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    /* margin: 0px; */
+}
+
 html {
     height: 100%;
 }
@@ -9,6 +14,7 @@ body {
     color: black;
     background: red;
     height: 100%;
+    margin: 0px;
 }
 
 body::after {
@@ -166,17 +172,18 @@ input[type=submit]:hover {
 /* Bottom of page, navigation links for further reference */
 footer {
     position: 0;
-    /* left: 0; */
     bottom: 0;
     width: 100%;
     height: 50px;
     font-size: 120%;
     background-color: darkslategray;
     color: red;
-    /* text-align: center; */
-    padding: 5px 5px;
-    /* float: left; */
+    /* padding: 5px 5px; */
+    /* margin-left: -8px; */
+    /* margin-right: 100px; */
     text-decoration: none;
+    margin: 0px;
+    border: 3px solid green;
 }
 
 footer a {
