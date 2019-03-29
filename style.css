@@ -8,20 +8,18 @@ body {
     line-height: 27px;
     color: black;
     background: red;
-    height: 100%;
+    height: 100%vh;
+    position: relative;
+    margin: 0;
 }
 
 body::after {
     content: "";
     display: block;
-    /* height: 0px; */
-    /* In example height was set to 50px, setting to 0 or removing, removed a buffer that was appearing below the footer */
 }
 
 main {
-    min-height: 100%;
-    margin-bottom: -50px;
-    /* background: #ddd; */
+    padding-bottom: 4rem;
 }
 
 main:after {
@@ -165,17 +163,15 @@ input[type=submit]:hover {
 
 /* Bottom of page, navigation links for further reference */
 footer {
-    position: 0;
-    /* left: 0; */
+    position: absolute;
+    box-sizing: border-box;
     bottom: 0;
     width: 100%;
-    height: 50px;
-    font-size: 120%;
+    height: 4rem;
+    font-size: 130%;
     background-color: darkslategray;
     color: red;
-    /* text-align: center; */
-    padding: 5px 5px;
-    /* float: left; */
+    padding: 1rem 1rem 1rem 1rem;
     text-decoration: none;
 }
 
