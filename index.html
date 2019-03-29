@@ -14,6 +14,8 @@
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
     </nav>
+
+    <!-- Main viewable content -->
     <main>
         <!-- Resume content styled with 3 column table -->
         <div class="row">
@@ -57,6 +59,10 @@
                     <li>Centrify to implement macOS integration in Windows based environment</li>
                 </ul>
             </div>
+        </div>
+
+        <!-- Seperate div for easier formatting of 1 column + image -->
+        <div class="row" id="interests">
             <div class="column">
                 <h2>Current interests</h2>
                 <hr>
@@ -68,16 +74,20 @@
                     <li>Automation</li>
                 </ul>
             </div>
+        </div>
+
+        <!-- seperate div for profile image -->
+        <div id="profile">
             <!-- Profile Image -->
             <a href="https://www.linkedin.com/in/bryan-wilson-info/" target="_blank">
-                <img class="profile" src="images/profile 2.jpg" alt="Profile" width="400" height="400">
+                <img id="profile-image" src="images/profile 2.jpg" alt="Profile" width="400" height="400">
             </a>
         </div>
 
         <!-- Contact form, using div class to contain both left side "text box", and form container. Helps with layout structure. -->
-        <div class="contact-form">
+        <!-- <div class="contact-form">
 
-            <!-- Text to display next to contact form. This could be expanded. -->
+            <!-- Text to display next to contact form. This could be expanded. - ->
             <div id="contact-text">
                 <a name="contact"></a>
                 <ul>
@@ -85,7 +95,7 @@
                 </ul>
             </div>
 
-            <!-- Contact form, action shows error currently, as the php file referenced does not exist. -->
+            <!-- Contact form, action shows error currently, as the php file referenced does not exist. -- >
             <div class="contact-container">
                 <form action="action_page.php">
 
@@ -100,12 +110,9 @@
                         style="height:200px"></textarea>
 
                     <input type="submit" value="Submit">
-                    <!-- closing form -->
                 </form>
-                <!-- Closing contact container div-->
             </div>
-            <!-- Closing Contact form div -->
-        </div>
+        </div> -->
     </main>
 
 
