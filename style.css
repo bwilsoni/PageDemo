@@ -13,7 +13,7 @@ body {
     line-height: 27px;
     color: black;
     background: whitesmoke;
-    min-height: 100%vh;
+    min-height: 100vh;
     position: relative;
     margin: 0;
     border: solid red;
@@ -100,9 +100,10 @@ Second Row, 1 column with text, and profile image - want these attached, witht h
     clear: both;
 }
 
-#profile {
-    float: left;
-    width: 50%;
+.profile {
+    /* float: left; */
+    width: 100%;
+    min-height: 600px;
 }
 
 /* profile image styling */
@@ -156,7 +157,9 @@ Second Row, 1 column with text, and profile image - want these attached, witht h
 
 /* Style inputs with type="text", select elements and textareas */
 
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
     width: 100%;
     /* Full width */
     padding: 12px;
@@ -172,7 +175,7 @@ input[type=text], select, textarea {
     margin-bottom: 16px;
     /* Bottom margin */
     resize: vertical
-    /* Allow the user to vertically resize the textarea (not horizontally) */
+        /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
