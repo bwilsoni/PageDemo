@@ -29,6 +29,7 @@ main:after {
 }
 
 /* Menu Bar styling */
+
 nav {
     overflow: hidden;
     padding: 0;
@@ -47,6 +48,7 @@ nav {
 }
 
 /* Sets navigation link styling, oriented on right side of page, colors, padding, display block means it  */
+
 .navbar a {
     float: right;
     color: darkgreen;
@@ -56,14 +58,19 @@ nav {
 }
 
 /* When mouse hovers over a link in the navigation bar, change background color, and text color */
+
 .navbar a:hover {
     background-color: lightgray;
     color: black;
 }
 
-/* Styling for Resume content in 3 columns layout */
+/* 
+First row for Resume content in 3 column layout.
+Second Row, 1 column with text, and profile image - want these attached, witht he text closer to the contact form
+*/
 
 /* Height can and should be removed once I can blend with background colors */
+
 .column {
     float: left;
     width: 33.33%;
@@ -73,15 +80,27 @@ nav {
     background-color: whitesmoke;
 }
 
+#interests {
+    float: right;
+    width: 50%;
+}
+
 /* ensures the next logical content does not interfere with the columns */
+
 .row::after {
     content: "";
     display: table;
     clear: both;
 }
 
+#profile {
+    float: left;
+    width: 50%;
+}
+
 /* profile image styling */
-.profile {
+
+#profile-image {
     float: right;
     display: block;
     margin-left: auto;
@@ -92,10 +111,13 @@ nav {
 }
 
 /* Contact Form styling */
+
 .contact-form {
     width: 60%;
     height: 600px;
 }
+
+/* Text that encourages contact form use, oriented to the left of the contact form */
 
 #contact-text {
     float: left;
@@ -105,11 +127,14 @@ nav {
     width: 40%;
 }
 
+/* List item formatting that removes list formatting from text */
+
 #contact-text ul {
     list-style-type: none;
 }
 
 /* Add a background color and some padding around the form */
+
 .contact-container {
     box-sizing: border-box;
     border-radius: 5px;
@@ -123,9 +148,8 @@ nav {
 }
 
 /* Style inputs with type="text", select elements and textareas */
-input[type=text],
-select,
-textarea {
+
+input[type=text], select, textarea {
     width: 100%;
     /* Full width */
     padding: 12px;
@@ -141,10 +165,11 @@ textarea {
     margin-bottom: 16px;
     /* Bottom margin */
     resize: vertical
-        /* Allow the user to vertically resize the textarea (not horizontally) */
+    /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
+
 input[type=submit] {
     background-color: darkslategray;
     color: white;
@@ -155,13 +180,13 @@ input[type=submit] {
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
+
 input[type=submit]:hover {
     background-color: #45a049;
 }
 
-
-
 /* Bottom of page, navigation links for further reference */
+
 footer {
     position: absolute;
     box-sizing: border-box;
@@ -175,11 +200,15 @@ footer {
     text-decoration: none;
 }
 
+/* Footer links that are floated to left */
+
 footer a {
     text-decoration: inherit;
     color: white;
     font-size: inherit;
 }
+
+/* Footer text, like a CC, floating to the right */
 
 footer #name-footer {
     float: right;
