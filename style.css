@@ -8,9 +8,10 @@ body {
     line-height: 27px;
     color: black;
     background: whitesmoke;
-    height: 100%vh;
+    min-height: 100%vh;
     position: relative;
     margin: 0;
+    border: solid red;
 }
 
 body::after {
@@ -20,13 +21,14 @@ body::after {
 
 main {
     padding-bottom: 4rem;
+    border: solid blue;
 }
 
-main:after {
+/* main:after {
     content: "";
     display: block;
-    height: 100px;
-}
+    /* height: 100px; 
+} */
 
 /* Menu Bar styling */
 
