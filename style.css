@@ -1,16 +1,11 @@
-* {
-    box-sizing: border-box;
-    /* margin: 0px; */
-}
-
 html {
     height: 100%;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    line-height: 27px;
+    font-size: 100%;
+    line-height: 250%;
     color: black;
     background: whitesmoke;
     min-height: 100vh;
@@ -28,12 +23,6 @@ main {
     padding-bottom: 4rem;
     border: solid blue;
 }
-
-/* main:after {
-    content: "";
-    display: block;
-    /* height: 100px; 
-} */
 
 /* Menu Bar styling */
 
@@ -73,7 +62,7 @@ nav {
 
 /* 
 First row for Resume content in 3 column layout.
-Second Row, 1 column with text, and profile image - want these attached, witht he text closer to the contact form
+Second Row, 1 column with text, and profile image - want these attached, with he text closer to the contact form
 */
 
 /* Height can and should be removed once I can blend with background colors */
@@ -81,15 +70,10 @@ Second Row, 1 column with text, and profile image - want these attached, witht h
 .column {
     float: left;
     width: 33.33%;
-    padding: 10px;
-    height: 350px;
+    padding: 3%;
+    height: auto;
     box-sizing: border-box;
     background-color: whitesmoke;
-}
-
-#interests {
-    float: right;
-    width: 50%;
 }
 
 /* ensures the next logical content does not interfere with the columns */
@@ -100,22 +84,36 @@ Second Row, 1 column with text, and profile image - want these attached, witht h
     clear: both;
 }
 
+/* Container div for profile image and interests text */
+
 .profile {
-    /* float: left; */
-    width: 100%;
-    min-height: 600px;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* This seems to avoid having to set a min-height or height. It seems to bound the height of profile based on the content inside of this div. */
 }
 
 /* profile image styling */
 
 #profile-image {
-    float: right;
-    display: block;
-    margin-left: auto;
-    margin-right: 15%;
+    order: 1;
+    /* float: left; */
+    /* display: block; */
+    /* margin-left: auto; */
+    /* margin-right: 15%; */
     border-radius: 8px;
-    max-width: 100%;
-    height: auto;
+    /* max-width: 100%; */
+    /* height: auto; */
+}
+
+/* Text that floats next to profile image */
+
+#interests {
+    order: 0;
+    /* flex-basis: 30%; */
+    /* float: right; */
+    /* width: 50%; */
 }
 
 /* Contact Form styling */
@@ -157,9 +155,7 @@ Second Row, 1 column with text, and profile image - want these attached, witht h
 
 /* Style inputs with type="text", select elements and textareas */
 
-input[type=text],
-select,
-textarea {
+input[type=text], select, textarea {
     width: 100%;
     /* Full width */
     padding: 12px;
@@ -175,7 +171,7 @@ textarea {
     margin-bottom: 16px;
     /* Bottom margin */
     resize: vertical
-        /* Allow the user to vertically resize the textarea (not horizontally) */
+    /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
