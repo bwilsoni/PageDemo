@@ -11,22 +11,13 @@ body {
     min-height: 100vh;
     position: relative;
     margin: 0;
-    /* border: solid red; */
-}
-
-body::after {
-    content: "";
-    display: block;
 }
 
 main {
     padding-bottom: 4rem;
-    /* border: solid blue; */
 }
 
 /* Menu Bar styling */
-
-/* Flexbox navigation styling */
 
 .navigation {
     display: flex;
@@ -97,18 +88,12 @@ Second Row, 1 column with text, and profile image - want these attached, with he
 
 .contact-form {
     display: flex;
-    /* width: 60%; */
-    /* height: 600px; */
 }
 
 /* Text that encourages contact form use, oriented to the left of the contact form */
 
 #contact-text {
-    /* float: left; */
     text-align: right;
-    /* padding-right: 40px; */
-    /* box-sizing: border-box; */
-    /* width: 40%; */
 }
 
 /* List item formatting that removes list formatting from text */
