@@ -11,7 +11,7 @@ body {
     min-height: 100vh;
     position: relative;
     margin: 0;
-    border: solid red;
+    /* border: solid red; */
 }
 
 body::after {
@@ -21,7 +21,7 @@ body::after {
 
 main {
     padding-bottom: 4rem;
-    border: solid blue;
+    /* border: solid blue; */
 }
 
 /* Menu Bar styling */
@@ -205,7 +205,7 @@ footer {
     padding: 1rem 1rem 1rem 1rem;
     text-decoration: none;
     margin: 0px;
-    border: 3px solid green;
+    /* border: 3px solid green; */
 }
 
 /* Footer links that are floated to left */
