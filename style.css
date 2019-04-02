@@ -26,27 +26,42 @@ main {
 
 /* Menu Bar styling */
 
-nav {
-    overflow: hidden;
-    padding: 0;
-    position: relative;
-    top: 0;
-    width: 100%;
+/* Flexbox navigation styling */
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
 }
 
-.navbar .title {
-    color: red;
-    float: left;
+/* Medium size screen change spacing */
+
+@media all and (max-width: 800px) {
+    .navigation {
+        justify-content: space-around;
+    }
+}
+
+/* small screens stack menu elements in a column layout */
+
+@media all and (max-width: 500px) {
+    .navigation {
+        flex-direction: column;
+    }
+}
+
+.navigation #title {
     color: black;
     text-align: center;
     padding: 14px 16px;
     font-size: 200%;
+    margin-right: auto;
+    /* margin-right takes empty space between first element and next element and sets that as the margin. */
 }
 
 /* Sets navigation link styling, oriented on right side of page, colors, padding, display block means it  */
 
-.navbar a {
-    float: right;
+.navigation a {
     color: darkgreen;
     text-align: center;
     padding: 14px 16px;
@@ -55,7 +70,7 @@ nav {
 
 /* When mouse hovers over a link in the navigation bar, change background color, and text color */
 
-.navbar a:hover {
+.navigation a:hover {
     background-color: lightgray;
     color: black;
 }
@@ -72,8 +87,9 @@ Second Row, 1 column with text, and profile image - want these attached, with he
     justify-content: space-evenly;
     flex-flow: row wrap;
     align-items: flex-start;
-    /* flex-direction: columns; */
 }
+
+/* Styling for items, empty right now */
 
 .item {}
 
