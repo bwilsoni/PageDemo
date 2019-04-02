@@ -96,18 +96,19 @@ Second Row, 1 column with text, and profile image - want these attached, with he
 /* Contact Form styling */
 
 .contact-form {
-    width: 60%;
-    height: 600px;
+    display: flex;
+    /* width: 60%; */
+    /* height: 600px; */
 }
 
 /* Text that encourages contact form use, oriented to the left of the contact form */
 
 #contact-text {
-    float: left;
+    /* float: left; */
     text-align: right;
-    padding-right: 40px;
-    box-sizing: border-box;
-    width: 40%;
+    /* padding-right: 40px; */
+    /* box-sizing: border-box; */
+    /* width: 40%; */
 }
 
 /* List item formatting that removes list formatting from text */
@@ -127,7 +128,6 @@ Second Row, 1 column with text, and profile image - want these attached, with he
     /* downsizes container from full screen width */
     margin: auto;
     /* attempt to center contact form */
-    float: right;
 }
 
 /* Style inputs with type="text", select elements and textareas */
