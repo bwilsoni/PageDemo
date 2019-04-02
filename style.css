@@ -65,56 +65,17 @@ First row for Resume content in 3 column layout.
 Second Row, 1 column with text, and profile image - want these attached, with he text closer to the contact form
 */
 
-/* Height can and should be removed once I can blend with background colors */
+/* Implementing Flexbox for easier content organization */
 
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 3%;
-    height: auto;
-    box-sizing: border-box;
-    background-color: whitesmoke;
-}
-
-/* ensures the next logical content does not interfere with the columns */
-
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Container div for profile image and interests text */
-
-.profile {
-    overflow: auto;
+.container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* This seems to avoid having to set a min-height or height. It seems to bound the height of profile based on the content inside of this div. */
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    /* flex-direction: columns; */
 }
 
-/* profile image styling */
-
-#profile-image {
-    order: 1;
-    /* float: left; */
-    /* display: block; */
-    /* margin-left: auto; */
-    /* margin-right: 15%; */
-    border-radius: 8px;
-    /* max-width: 100%; */
-    /* height: auto; */
-}
-
-/* Text that floats next to profile image */
-
-#interests {
-    order: 0;
-    /* flex-basis: 30%; */
-    /* float: right; */
-    /* width: 50%; */
-}
+.item {}
 
 /* Contact Form styling */
 
