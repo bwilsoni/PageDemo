@@ -27,17 +27,33 @@ main {
 
 /* Medium size screen change spacing */
 
-@media all and (max-width: 800px) {
+/* @media all and (max-width: 800px) {
     .navigation {
         justify-content: space-around;
     }
-}
+} */
 
 /* small screens stack menu elements in a column layout */
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 800px) {
     .navigation {
         flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: left;
+        align-content: flex-start;
+    }
+
+    .item {
+        flex: 1 1 auto;
+        /* flex-grow: 1; */
+    }
+
+    .contact-container {
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
@@ -82,19 +98,20 @@ Second Row, 1 column with text, and profile image - want these attached, with he
 
 /* Styling for items, empty right now */
 
-.item {}
+.item {
+    /* flex: 0 0 25%; */
+}
 
 /* Contact Form styling */
 
-.contact-form {
+.contact-container {
     display: flex;
+    padding: 5em 0;
 }
 
 /* Text that encourages contact form use, oriented to the left of the contact form */
 
-#contact-text {
-    text-align: right;
-}
+#contact-text {}
 
 /* List item formatting that removes list formatting from text */
 
@@ -104,7 +121,7 @@ Second Row, 1 column with text, and profile image - want these attached, with he
 
 /* Add a background color and some padding around the form */
 
-.contact-container {
+.contact-form {
     box-sizing: border-box;
     border-radius: 5px;
     background-color: lightgray;
@@ -117,7 +134,9 @@ Second Row, 1 column with text, and profile image - want these attached, with he
 
 /* Style inputs with type="text", select elements and textareas */
 
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
     width: 100%;
     /* Full width */
     padding: 12px;
@@ -133,7 +152,7 @@ input[type=text], select, textarea {
     margin-bottom: 16px;
     /* Bottom margin */
     resize: vertical
-    /* Allow the user to vertically resize the textarea (not horizontally) */
+        /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
@@ -166,8 +185,8 @@ footer {
     color: red;
     padding: 1rem 1rem 1rem 1rem;
     text-decoration: none;
-    margin: 0px;
-    /* border: 3px solid green; */
+    /* padding-top: 50px; */
+    /* margin: 0px; */
 }
 
 /* Footer links that are floated to left */
