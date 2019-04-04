@@ -4,6 +4,8 @@
 <head>
     <!-- import css stylesheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- import javascript -->
+    <script src="contact.js" defer></script>
 </head>
 
 <body>
@@ -90,10 +92,10 @@
 
             <!-- Contact form, action shows error currently, as the php file referenced does not exist. -->
             <div class="contact-form">
-                <form action="action_page.php">
+                <form id="wow" action="contact.js">
 
                     <label for="email">Email address</label>
-                    <input type="text" id="email" name="emailaddress" placeholder="Your email address...">
+                    <input type="email" id="email" name="emailaddress" placeholder="Your email address...">
 
                     <label for="subject">Subject</label>
                     <input type="text" id="subject" name="subjectline" placeholder="Subject line...">
@@ -102,7 +104,7 @@
                     <textarea id="message" name="messagearea" placeholder="Write something.."
                         style="height:200px"></textarea>
 
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" onclick="display()">
                 </form>
             </div>
         </div>

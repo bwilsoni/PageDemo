@@ -69,7 +69,6 @@ Second Row, 1 column with text, and profile image - want these attached, with he
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
-    /* width: 90%; */
 }
 
 /* Styling for items, empty right now */
@@ -113,7 +112,10 @@ Second Row, 1 column with text, and profile image - want these attached, with he
 
 /* Style inputs with type="text", select elements and textareas */
 
-input[type=text], select, textarea {
+input[type=text],
+input[type=email],
+select,
+textarea {
     width: 100%;
     /* Full width */
     padding: 12px;
@@ -129,7 +131,7 @@ input[type=text], select, textarea {
     margin-bottom: 16px;
     /* Bottom margin */
     resize: vertical
-    /* Allow the user to vertically resize the textarea (not horizontally) */
+        /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
@@ -187,20 +189,23 @@ footer #name-footer {
     .navigation {
         flex-direction: column;
     }
+
     .container {
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        width: 90%;
     }
+
     .item {
         flex: 1 1 auto;
         /* What are these values doing? */
     }
+
     .contact-container {
         flex-direction: column;
         justify-content: center;
     }
+
     .contact-form {
         min-width: 80%;
     }
