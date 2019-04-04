@@ -33,30 +33,6 @@ main {
     }
 } */
 
-/* small screens stack menu elements in a column layout */
-
-@media all and (max-width: 800px) {
-    .navigation {
-        flex-direction: column;
-    }
-
-    .container {
-        flex-direction: column;
-        justify-content: left;
-        align-content: flex-start;
-    }
-
-    .item {
-        flex: 1 1 auto;
-        /* flex-grow: 1; */
-    }
-
-    .contact-container {
-        flex-direction: column;
-        justify-content: center;
-    }
-}
-
 .navigation #title {
     color: black;
     text-align: center;
@@ -91,9 +67,9 @@ Second Row, 1 column with text, and profile image - want these attached, with he
 
 .container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-flow: row wrap;
-    align-items: flex-start;
+    width: 90%;
 }
 
 /* Styling for items, empty right now */
@@ -111,12 +87,15 @@ Second Row, 1 column with text, and profile image - want these attached, with he
 
 /* Text that encourages contact form use, oriented to the left of the contact form */
 
-#contact-text {}
+#contact-text {
+    /* justify-content: center; */
+}
 
 /* List item formatting that removes list formatting from text */
 
 #contact-text ul {
     list-style-type: none;
+    font-size: 200%;
 }
 
 /* Add a background color and some padding around the form */
@@ -126,17 +105,15 @@ Second Row, 1 column with text, and profile image - want these attached, with he
     border-radius: 5px;
     background-color: lightgray;
     padding: 20px;
-    width: 50%;
-    /* downsizes container from full screen width */
+    max-width: 30em;
+    /* For normal to larger screens, have contact form a fixed width, so that it does not look excessively wide */
     margin: auto;
     /* attempt to center contact form */
 }
 
 /* Style inputs with type="text", select elements and textareas */
 
-input[type=text],
-select,
-textarea {
+input[type=text], select, textarea {
     width: 100%;
     /* Full width */
     padding: 12px;
@@ -152,7 +129,7 @@ textarea {
     margin-bottom: 16px;
     /* Bottom margin */
     resize: vertical
-        /* Allow the user to vertically resize the textarea (not horizontally) */
+    /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
@@ -202,4 +179,29 @@ footer a {
 footer #name-footer {
     float: right;
     color: white;
+}
+
+/* small screens stack menu elements in a column layout */
+
+@media all and (max-width: 800px) {
+    .navigation {
+        flex-direction: column;
+    }
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 90%;
+    }
+    .item {
+        flex: 1 1 auto;
+        /* What are these values doing? */
+    }
+    .contact-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact-form {
+        min-width: 80%;
+    }
 }
