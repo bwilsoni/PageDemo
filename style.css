@@ -67,9 +67,9 @@ Second Row, 1 column with text, and profile image - want these attached, with he
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-flow: row wrap;
-    width: 90%;
+    /* width: 90%; */
 }
 
 /* Styling for items, empty right now */
